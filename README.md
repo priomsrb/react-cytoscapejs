@@ -144,7 +144,7 @@ class MyApp extends React.Component {
 
     const layout = { name: 'cose-bilkent' };
 
-    return <CytoscapeComponent elements={elements} layout={layout}>;
+    return <CytoscapeComponent elements={elements} layout={layout} />;
   }
 }
 ```
@@ -156,7 +156,7 @@ This prop allows for getting a reference to the Cytoscape `cy` reference using a
 ```jsx
 class MyApp extends React.Component {
   render() {
-    return <CytoscapeComponent cy={(cy) => { this.cy = cy }}>;
+    return <CytoscapeComponent cy={(cy) => { this.cy = cy }} />;
   }
 }
 ```
